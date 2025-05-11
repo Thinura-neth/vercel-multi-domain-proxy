@@ -1,0 +1,23 @@
+{
+  "name": "vercel-multi-domain-proxy",
+  "version": "1.0.0",
+  "description": "Vercel proxy for multiple domains to any backend service",
+  "main": "api/index.js",
+  "license": "MIT",
+  "scripts": {
+    "setup": "node setup.js",
+    "deploy": "vercel --prod",
+    "update-ngrok": "node update-ngrok.js",
+    "auto-update": "node auto-update.js",
+    "start": "node start-with-tunnel.js",
+    "start:auto": "node start-and-update.js",
+    "assign-domain": "node assign-domain.js",
+    "migrate": "node migrate-to-multi-domain.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "vercel": "^32.5.3"
+  }
+} 
