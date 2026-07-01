@@ -2,15 +2,13 @@
   "version": 2,
   "functions": {
     "api/index.js": {
-      "runtime": "edge",
-      "memory": 1024
+      "runtime": "edge"
     },
     "api/diagnostics.js": {
       "memory": 1024
     },
     "api/diagnostics-edge.js": {
-      "runtime": "edge",
-      "memory": 1024
+      "runtime": "edge"
     }
   },
   "routes": [
@@ -18,4 +16,4 @@
     { "src": "/diagnostics", "dest": "/api/diagnostics.js" },
     { "src": "/(.*)", "dest": "/api/index.js" }
   ]
-} 
+}
